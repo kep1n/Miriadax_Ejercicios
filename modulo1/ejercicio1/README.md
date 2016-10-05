@@ -1,3 +1,3 @@
 # Miriadax_Ejercicios
 
-Ejercicios para el curso de Miriadax
+Ejercicio1 para el curso de Miriadax

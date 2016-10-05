@@ -1,9 +1,22 @@
+body {
+	background-color: #F5F3EE;
+}
+
 p, li {
+	color: #3C393C;
 	font-family: 'Lato', sans-serif;
+	
 }
 
+/*Le damos un formato de código al ejemplo*/
 #code {
-
-	font-family: Courier, sans-serif;
-	font-size: 0.8em;
+	color: #3C393C;
+	font-family: 'Source Code Pro', sans-serif;
+	font-size: 0.9em;
 }
+
+h1, h3, h4 {
+	color: #1B1B1E;
+	font-family: sans-serif;
+}
+

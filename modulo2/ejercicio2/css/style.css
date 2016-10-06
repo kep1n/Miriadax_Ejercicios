@@ -1,0 +1,32 @@
+/*Utilizamos una fuente mediante font-face.
+Hay que tener en cuenta que la url o ruta será siempre
+desde el css, por lo que en este caso subimos un directorio
+mediante '../' */
+
+@font-face {
+  font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans-Light.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+.parrafo1 {
+	font-family:'Fira Sans';
+}
+
+.parrafo2 {
+	font-family:'Roboto';
+}
+
+h1 {
+	font-family: Arial, sans-serif;
+}
+
+h3 {
+	font-family: Garamond, sans-serif;
+}
+
+body {
+	background-color: #444446;
+	color: #E5E8E7;
+}

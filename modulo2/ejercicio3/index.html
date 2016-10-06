@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet"/>
+	<title>Responsive elements</title>
+
+</head>
+
+<body>
+
+	<div id="video">
+
+		<h2>Vídeo de youtube</h2>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/SeYATZknAgI" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<div id="svg">
+
+	<h2>Scalable Vector Graphics</h2>
+	<img src="img/Mozilla_Firefox.svg" width="200px" height="200px"/>
+	<img src="img/Mozilla_Firefox.svg" width="100px" height="100px"/>
+	<img src="img/Mozilla_Firefox.svg" width="50px" height="50px"/>
+
+	</div>
+
+	<div id="imagen">
+
+		<h2 class="img">Responsive Image</h2>
+		<!--Para ver cómo cambian las imágenes, ir haciendo más pequeña la ventana del navegador y cambiará automáticamente-->
+		<picture>
+		<source media="(min-width:1200px)" srcset="img/1200.jpg"/>
+		<source media="(min-width:1000px)" srcset="img/1000.png"/>
+		<source media="(min-width:800px)" srcset="img/800.jpg"/>
+		<source media="(min-width:400px)" srcset="img/400.jpg"/>
+		<source media="(min-width:200px)" srcset="img/200.jpg"/>
+		<img src="img/1200.jpg" alt="Linux Wallpaper"/>
+		</picture>
+
+	</div>
+
+	
+</body>
+</html>

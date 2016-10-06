@@ -1,0 +1,28 @@
+h2 {
+	font-family: 'Signika', serif;
+}
+
+body {
+	background-color: #D1D3D2;
+}
+
+#video {
+	float: left;
+	padding-left: 2em;
+}
+
+#svg {
+	float: right;
+	padding-right: 2em;
+	padding-top: 3em;
+}
+
+#imagen {
+	clear: both;
+}
+
+.img {
+	text-align: center;
+	padding: 10px;
+}
+

@@ -1,0 +1,63 @@
+body {
+	font-family: 'Lato', sans-serif;
+	background-color: #F2F2F2;
+	color: #595959;
+}
+
+div {
+	background: -webkit-linear-gradient(left,#F2F2F2, #FEFFFE);
+
+}
+
+h1 {
+	background: -webkit-linear-gradient(right,#F2F2F2, #FEFFFE);
+	font-family: 'kaushan-script', sans-serif;
+	font-size: 3em;
+}
+
+h2 {
+	font-family: 'kaushan-script', sans-serif;
+	font-size: 2em;
+}
+
+h3 {
+	font-family: 'kaushan-script', sans-serif;
+	font-size: 1.5em;
+	color: #4D5359;
+}
+
+.char {
+	font-size: 2em;
+}
+
+#escultura {
+
+	padding: 15px;
+	float: right;
+}
+
+#vectorial {
+	float: right;
+}
+
+#oblique {
+	float: left;
+}
+
+nav {
+	
+	width: 100%;
+}
+
+.anchor {
+	text-align: center;
+	display: block;
+	float: left;
+	background: -webkit-radial-gradient(white 50%, #595959);
+	width: 33.3%;
+	font-size: 2em;
+	font-weight: bold;
+	text-decoration: none;
+	color: #595959;
+	box-sizing: border-box;
+}

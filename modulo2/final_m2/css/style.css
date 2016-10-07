@@ -32,7 +32,6 @@ h3 {
 
 #escultura {
 
-	padding: 15px;
 	float: right;
 }
 
@@ -40,9 +39,9 @@ h3 {
 	float: right;
 }
 
-#oblique {
+/*#obl {
 	float: left;
-}
+}*/
 
 nav {
 	
@@ -60,4 +59,48 @@ nav {
 	text-decoration: none;
 	color: #595959;
 	box-sizing: border-box;
+
+}
+
+.anchor:hover {
+	background: -webkit-radial-gradient(#595959 50%,white);
+	color: white;
+}
+
+#link {
+	margin: 5px;
+	float: right;
+	
+}
+
+#video {
+	margin: 5px;
+	float: left;
+}
+
+#footer {
+	display: block;
+	background: #444446;
+	border-style: double;
+	border-radius: 10px;
+	height: 120px;
+	clear: both;
+}
+
+#copy  {
+
+	
+	text-align: center;
+	color: #E5E8E7;
+}
+
+#copy a {
+
+	text-decoration: none;
+	color: #E5E8E7;
+}
+
+figcaption {
+	text-align: right;
+	font-size: 0.6em;
 }

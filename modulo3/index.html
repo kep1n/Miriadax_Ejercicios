@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+	<link href= css/style.css type="text/css" rel="stylesheet"/>
+	<title>Date</title>
+</head>
+<body>
+	<h1 id="h1"></h1>
+	<p id="name">Sr. Kepa López</p>
+	<h2 id="h2">La fecha y hora son:</h2>
+	<div id="fecha"></div>
+	<div>
+		<ol>
+			<li>Contenido de innerHTML de elemento identificado por <span class="tags">id="h2"</span>:</li>
+			<p>Código a ejecutar: <span class="code">document.getElementById("h2").innerHTML;</span></p>
+			<script>
+				document.write("El resultado en consola sería el siguiente:"+ "<br>");
+				var result = document.getElementById("h2").innerHTML;
+				document.write(result.bold());
+				</script>
+			<br>
+				<img src="img/capture3.jpg"/>
+			<br>
+			<li>Contenido de outerHTML de elemento identificado por <span class="tags">id="h1"</span>:</li>
+				<p>Código a ejecutar: <span class="code">document.getElementById("h1").outerHTML;</span>:</p>
+				<p>El resultado en consola sería:</p>
+				<p class="code">&lt;h1 id="h1"&gt;Buenas tardes&lt;/h1&gt;</p>
+			<img src="img/capture2.jpg"/>
+			<li>Contenido de la propiedad global: <span class="tags">location.href</span>:</li>
+				<p>Código a ejecutar: <span class="code">location.href</span></p>
+				<p>El resultado en consola sería nuestra ruta de archivo del html:</p>
+				<p class="code">Miriadax_HTML/Module_1/Miriadax_Ejercicios/modulo3/index.html <span class="note">(nota: se ha omitido parte de la ruta por privacidad)</span></p>
+				<img src="img/capture5.jpg"/>
+			<li>Contenido de de la propiedad global: <span class="tags">location</span>:</li>
+				<p>Código a ejecutar: <span class="code">location</span></p>
+				<p>El resultado sería el objeto Location.</p>
+				<p class="code">Location {hash: "", search: "", pathname: "/Miriadax_HTML/Module_1/Miriadax_Ejercicios/modulo3/index.html", port: "", hostname: ""…}</p>
+				<img src="img/capture4.jpg"/>
+			<li>Contenido de de las propiedades globales: <span class="tags">screen.width</span> y <span class="tags">screen.heigth</span>:</li>
+				<p>Código a ejecutar: <span class="code">screen.width</p>
+				<p>Código a ejecutar: <span class="code"> screen.height</p>
+				<img src="img/capture.jpg"/>
+		</ol>
+	</div>
+	<script type="text/javascript">
+
+		var person = prompt("Por favor, introduce tu nombre:");
+
+		if(person !=null) {
+			document.getElementById("name").innerHTML = person;
+		}
+
+		var fecha = new Date;
+		var mensaje;
+
+		if (fecha.getHours() < 7) {
+			mensaje = "Buenas noches";
+		}
+		else if (fecha.getHours() < 12) {
+			mensaje = "Buenos días";
+		}
+		else if (fecha.getHours() < 21) {
+			mensaje = "Buenas tardes";
+		}
+		else {
+			mensaje ="Buenas noches"
+		}
+
+		document.getElementById("h1").innerHTML = mensaje;
+		document.getElementById("fecha").innerHTML = fecha;
+
+
+	</script>
+
+</body>
+</html>

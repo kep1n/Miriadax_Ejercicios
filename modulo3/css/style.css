@@ -1,0 +1,38 @@
+* {
+	font-family: "Roboto", sans-serif;
+	color: #FFFFEA;
+	background-color: #1B2021;
+}
+
+li {
+	font-size: 1.1em;
+}
+
+.tags{
+	font-family: Courier, serif;
+	font-style: italic;
+}
+
+.code {
+	font-family: Courier, serif;
+}
+
+#name {
+	font-size: 1.5em;
+
+}
+
+#name:hover {
+	color:red;
+}
+
+.note {
+	font-size: 0.7em;
+}
+
+#fecha {
+	font-size: 1.2em;
+}
+#fecha:hover {
+	color: red;
+}

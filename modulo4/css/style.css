@@ -1,3 +1,63 @@
 body {
 	font-family: "Raleway", sans-serif;
 }
+
+
+.btn {
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: center;
+	display: inline-block;
+	border: none;
+	font-size: 1.2em;
+	font-family: "Dosis", sans-serif;
+	width: 5%;
+	height: 40px;
+	margin: 5px;
+	border-radius: 3px;
+	background-color: #CFD2CD;
+}
+
+#input {
+	font-family: "Raleway", sans-serif;
+	color: black;
+	background-color: #CFD2CD;
+	margin: 5px;
+	font-size: 1.6em;
+	text-align: right;
+	width: 12%;
+	border-radius: 3px;
+}
+
+#result {
+	background: #CFD2CD;
+	font-size: 1.6em;
+	padding: 4px;
+	color: black;
+	font-weight: bold;
+}
+
+
+.btn:hover {
+	background-color: black;
+	font-weight: bold;
+	color: white;
+	vertical-align: middle;
+	text-align: center;
+	border: none;
+	font-size: 1.3em;
+	font-family: "Dosis", sans-serif;
+	width: 5%;
+	height: 40px;
+	margin: 5px;
+	border-radius: 3px;
+
+}
+
+.btn:active {
+  background-color: grey;
+  box-shadow: 0 2px black;
+  transform: translateY(3px);
+}
+
+

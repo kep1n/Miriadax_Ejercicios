@@ -60,6 +60,20 @@
 
 	}
 
+	function div() {
+		op = "/";
+		num = document.getElementById("input");
+		accum = num.value;
+
+	}
+
+	function times() {
+		op = "*";
+		num = document.getElementById("input");
+		accum = num.value;
+
+	}
+
 	function powy() {
 		op = "**";
 		num = document.getElementById("input");
@@ -82,6 +96,18 @@
 		}
 		else if (op === '**') {
 			num.value = (Math.pow(+accum, +num.value))
+			document.getElementById("result").value = num.value;
+			accum = num.value;
+			vaciar();
+		}
+		else if (op === '/') {
+			num.value = (+accum / +num.value)
+			document.getElementById("result").value = num.value;
+			accum = num.value;
+			vaciar();
+		}
+		else if (op === '*') {
+			num.value = (+accum * +num.value)
 			document.getElementById("result").value = num.value;
 			accum = num.value;
 			vaciar();

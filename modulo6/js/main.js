@@ -21,6 +21,7 @@ $ (function () {
 		num.val(Math.pow(num.val(),2));
 		$("#result").val(num.val());
 		$("#input").val(inputNumber);
+		vaciar();
 	})
 	
 	//Calcula el inverso de 1/x
@@ -32,6 +33,7 @@ $ (function () {
 		num.val(1/num.val());
 		$("#result").val(num.val());
 		$("#input").val(inputNumber);
+		vaciar();
 	});
 
 	//Calcula la raíz cuadrada
@@ -43,6 +45,7 @@ $ (function () {
 		num.val(Math.sqrt(num.val()));
 		$("#result").val(num.val());
 		$("#input").val(inputNumber);
+		vaciar();
 	});
 
 	//Calcula la parte entera de un número
@@ -59,6 +62,7 @@ $ (function () {
 			$("#result").val(num.val());
 		}
 		$("#input").val(inputNumber);
+		vaciar();
 	});
 
 	//Recoge el primero de los operandos y determina el cálculo a realizar
@@ -148,6 +152,8 @@ $ (function () {
 		num  = 0;
 	});
 
+
+	//Cálculo del sumatorio de una lista de números separados por comas
 	var sumatorio = $("#sumatorio");
 
 	sumatorio.on("click", function () {
@@ -162,6 +168,7 @@ $ (function () {
 		vaciar();
 	});
 
+	//Cálculo del producto de una lista de números separados por comas
 	var producto = $("#producto");
 
 	producto.on("click", function () {
@@ -176,7 +183,31 @@ $ (function () {
 		vaciar();
 	});
 
+	//Cálculo de 2 elevado a un número introducido en el input
+	var dosElevado = $("#doselevado");
+
+	dosElevado.on("click", function (){
+		var n = $("#input");
+		$("#result").val(Math.pow(2,n.val()));
+	});
+
+	//Cálculo del factorial de un número
+	var factorial = $("#factorial");
+
+	factorial.on("click", function(){
+		num = $("#input");
+		var result = 1;
+		while (num.val() > 0) {
+			result *= num.val();
+			num.val(num.val()-1);
+		}
+		$("#result").val(result);
+		vaciar();
+	});
 });
+
+	
+
 	// function addValue (num) {
 	// 	$("input").value = num;
 

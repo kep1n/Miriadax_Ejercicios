@@ -59,8 +59,3 @@ body {
   box-shadow: 0 2px black;
   transform: translateY(3px);
 }
-
-#cal {
-	width: 40%;
-	background-color: red;
-}

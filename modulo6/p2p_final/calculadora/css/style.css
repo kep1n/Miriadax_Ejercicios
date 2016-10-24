@@ -2,32 +2,38 @@ body {
 	font-family: "Raleway", sans-serif;
 }
 
-
-.btn {
-	font-weight: bold;
-	vertical-align: middle;
-	text-align: center;
-	display: inline-block;
-	border: none;
-	font-size: 1.2em;
-	font-family: "Dosis", sans-serif;
-	width: 5%;
-	height: 40px;
-	margin: 5px;
-	border-radius: 3px;
-	background-color: #CFD2CD;
+#calculadora {
+	display: block;
+	width: 400px;
+	height: 400px;
 }
 
 #input {
 	font-family: "Raleway", sans-serif;
 	color: black;
 	background-color: #CFD2CD;
-	margin: 5px;
+	margin: 0px;
 	font-size: 1.6em;
 	text-align: right;
-	width: 12%;
+	width: 50%;
 	border-radius: 3px;
 }
+
+.boton {
+	float: left;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: center;
+	border: none;
+	font-size: 1em;
+	font-family: "Dosis", sans-serif;
+	width: 70px;
+	height: 50px;
+	margin: 5px;
+	border-radius: 3px;
+	background-color: #CFD2CD;
+}
+
 
 #result {
 	display:inline;
@@ -62,6 +68,8 @@ body {
 	color: #252627;
 	text-decoration: none;
 }
+
+
 /*.btn:active {
   background-color: grey;
   box-shadow: 0 2px black;

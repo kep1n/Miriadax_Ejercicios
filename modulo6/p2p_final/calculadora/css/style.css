@@ -1,0 +1,70 @@
+body {
+	font-family: "Raleway", sans-serif;
+}
+
+
+.btn {
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: center;
+	display: inline-block;
+	border: none;
+	font-size: 1.2em;
+	font-family: "Dosis", sans-serif;
+	width: 5%;
+	height: 40px;
+	margin: 5px;
+	border-radius: 3px;
+	background-color: #CFD2CD;
+}
+
+#input {
+	font-family: "Raleway", sans-serif;
+	color: black;
+	background-color: #CFD2CD;
+	margin: 5px;
+	font-size: 1.6em;
+	text-align: right;
+	width: 12%;
+	border-radius: 3px;
+}
+
+#result {
+	display:inline;
+	background: #CFD2CD;
+	font-size: 1.6em;
+	padding: 4px;
+	color: black;
+	font-weight: bold;
+}
+
+
+.btn:hover {
+	background-color: #E5E8E7;
+	text-align: center;
+	font-size: 1.2em;
+	border: none;
+	font-family: "Dosis", sans-serif;
+	margin: 5px;
+	border-radius: 3px;
+}
+
+.panel-footer {
+	margin-top: 10px;
+}
+
+.panel-footer>a {
+	color: #444446;
+	text-decoration: none;
+}
+.panel-footer>a:hover {
+	font-weight: bold;
+	color: #252627;
+	text-decoration: none;
+}
+/*.btn:active {
+  background-color: grey;
+  box-shadow: 0 2px black;
+  transform: translateY(1px);
+}
+*/

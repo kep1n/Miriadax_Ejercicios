@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Puzzle</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link type="text/css" rel="stylesheet" href= "css/style.css"/>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(function() {
+     $( "#sortable" ).sortable();
+     $( "#sortable" ).disableSelection();
+    });
+  </script>  
+</head>
+<body>
+
+<div class="container">
+  <nav class="navbar navbar-inverse ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand" href="../index.html"><img src="https://d11xdyzr0div58.cloudfront.net/static/vector_tux.864e6cdcc23e.png" width="26" height="25"/></a>
+      </div>
+      <div class="collapse navbar-collapse" id="miMenu">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">INICIO</a></li>
+          <li class="active"><a href="puzzle/index.html">PUZZLE</a></li>
+          <li><a href="../calculadora/index.html">CALCULADORA</a></li> 
+          <!-- <li><a href="#">Opción 4</a></li> 
+          <li><a href="#">Opción 5</a></li>  -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="ejercicio">
+    <ul id="sortable">
+      <li><img id="p1" src="img/rafael_8.jpg" alt=""/></li>
+      <li><img id="p2" src="img/rafael_4.jpg" alt=""/></li>
+      <li><img id="p3" src="img/rafael_6.jpg" alt=""/></li>
+      <li><img id="p4" src="img/rafael_2.jpg" alt=""/></li>
+      <li><img id="p5" src="img/rafael_9.jpg" alt=""/></li>
+      <li><img id="p6" src="img/rafael_3.jpg" alt=""/></li>
+      <li><img id="p7" src="img/rafael_7.jpg" alt=""/></li>
+      <li><img id="p8" src="img/rafael_1.jpg" alt=""/></li>
+      <li><img id="p9" src="img/rafael_5.jpg" alt=""/></li>
+    </ul>
+    <div class="clear"> </div>
+  </div>
+  <div class="panel-footer"><a href="https://github.com/kep1n">Kepa A. López</a></div>
+</div>
+
+
+</body>
+</html>
+

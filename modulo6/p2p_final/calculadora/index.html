@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<meta charset="utf-8"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"/>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	
+
+</head>
+<body>
+<div class="container">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../index.html"><img src="https://d11xdyzr0div58.cloudfront.net/static/vector_tux.864e6cdcc23e.png" width="26" height="25"/></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavBar">
+				<ul class="nav navbar-nav">
+					<li><a href="../index.html">INICIO</a></li>
+					<li><a href="../puzzle/index.html">PUZZLE</a></li>
+					<li class="active"><a href="calculadora/index.html">CALCULADORA</a></li>
+		<!-- <input type="button" id="input2" value="1" onclick="addValue(input2.value)"/> -->
+			</ul>
+				<ul class="nav navbar-nav navbar-right">
+	        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
+	        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Inicia sesión</a></li>
+	      </ul>
+	  	</div>
+		</div>
+	</nav>
+	
+		<h1>Buenos días, bienvenido a la calculadora de Kepa López</h1>
+
+		<input type="text" id="input"/>
+		= <output id="result"></output>
+		<br>
+		<button class="btn" id="clear">C</button>
+		<button class="btn" id="pow">x<sup><span style="font-size: 0.6em;">2</span></sup></button>
+		<button class="btn" id="1divx">1/x</button>
+		<br>
+		<button class="btn" id="squareroot">&#8730;</button>
+		<button class="btn" id="integer">Entera</button>
+		<button class="btn" id="doselevado">2<sup><span style="font-size: 0.6em;">n</span></sup></button>
+		<br>
+		<button class="btn" id="factorial">n!</button>
+		<button class="btn" id="suma">+</button>		
+		<button class="btn" id="resta">-</button>
+		<br>
+		<button class="btn" id="powery">x<sup><span style="font-size: 0.6em;">y</span></sup></button>
+		<button class="btn" id="division">/</button>
+		<button class="btn" id="multiplicar">*</button>
+		<br>
+		<button class="btn" id="sumatorio">&Sigma; x</button>
+		<button class="btn" id="producto">&Pi; x</button>
+		<button class="btn" id="calculate">=</button>
+	<div class="panel-footer"><a href="https://github.com/kep1n">Kepa A. López</a></div>
+</div>
+</body>
+</html>

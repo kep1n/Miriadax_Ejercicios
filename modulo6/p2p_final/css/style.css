@@ -1,0 +1,22 @@
+.carousel-inner .item img, .carousel-inner .item img {
+	width: 100%;
+}
+.container .carousel-indicators .active {
+	background-color:orange;
+}
+.container .carousel-indicators li {
+	border: 1px solid orange;
+}
+.container .panel-footer {
+	margin-top:20px;
+}
+
+.panel-footer>a {
+	color: #444446;
+	text-decoration: none;
+}
+.panel-footer>a:hover {
+	font-weight: bold;
+	color: #252627;
+	text-decoration: none;
+}

@@ -147,6 +147,9 @@ $ (function () {
 	limpia.on("click", function () {
 		$("#result").val("");
 		$("#input").val("");
+		$("#memoria").val("");
+		$("#memoria").removeClass("activo");
+		$("#memoria").addClass("inactivo");
 		accum = 0;
 		op = "";
 		num  = 0;
@@ -189,6 +192,7 @@ $ (function () {
 	dosElevado.on("click", function (){
 		var n = $("#input");
 		$("#result").val(Math.pow(2,n.val()));
+		vaciar();
 	});
 
 	//Cálculo del factorial de un número
@@ -204,11 +208,30 @@ $ (function () {
 		$("#result").val(result);
 		vaciar();
 	});
-});
+
+	$(".draggable").draggable({
+		// revert: "invalid",
+		// helper: "clone",
+		stack: ".draggable" 
+	});
 
 	
+	//Recoge el valor de input y lo pasa al bloque de la memoria
+	var toMem = $("#toMem");
+	toMem.on("click", function(){
+		numero = $("#input");
+		$("#memoria").val(numero.val());
+		$("#memoria").addClass("activo");
+		$("#memoria").removeClass("inactivo");
+		vaciar();
+	});
 
-	// function addValue (num) {
-	// 	$("input").value = num;
-
-	// }
+	//Coge el valor del bloque de la memoria y lo pasa al input de nuevo
+	var fromMem = $("#fromMem");
+	fromMem.on("click", function(){
+		numero = $("#memoria");
+		$("#input").val(numero.val());
+		$("#memoria").removeClass("activo");
+		$("#memoria").addClass("inactivo");
+	});
+});

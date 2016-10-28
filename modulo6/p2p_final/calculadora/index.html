@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"/>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="  crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/main.js" type="text/javascript"></script>
@@ -30,7 +31,7 @@
 				<ul class="nav navbar-nav">
 					<li><a href="../index.html">INICIO</a></li>
 					<li><a href="../puzzle/index.html">PUZZLE</a></li>
-					<li class="active"><a href="calculadora/index.html">CALCULADORA</a></li>
+					<li class="active"><a href="index.html">CALCULADORA</a></li>
 		<!-- <input type="button" id="input2" value="1" onclick="addValue(input2.value)"/> -->
 			</ul>
 				<ul class="nav navbar-nav navbar-right">
@@ -44,7 +45,7 @@
 		
 		<h1>Buenos días, bienvenido a la calculadora de Kepa López</h1>
 		<div id="calculadora">
-			<input type="text" id="input"/>
+			<input type="text" class="drag drop" id="input"/>
 			= <output id="result"></output>
 			<br>
 			<button class="boton" id="clear">C</button>
@@ -66,6 +67,11 @@
 			<button class="boton" id="sumatorio">&Sigma; x</button>
 			<button class="boton" id="producto">&Pi; x</button>
 			<button class="boton" id="calculate">=</button>
+			<button class="boton" id="toMem">toMem</button>
+			<button class="boton" id="fromMem">fromMem</button>
+			
+			<div id="memoria" class="draggable droppable inactivo">Memoria</div>
+			
 		</div>
 
 	<div class="panel-footer"><a href="https://github.com/kep1n">Kepa A. López</a></div>

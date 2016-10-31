@@ -115,29 +115,31 @@ $ (function () {
 		if (op === '+'){
 			num.val(+accum + +num.val());
 			$("#result").val(num.val());
+			accum = 0;
 			vaciar();
 		}
 		else if (op ==='-') {
 			num.val(+accum - +num.val());
 			$("#result").val(num.val());
+			accum = 0;
 			vaciar();
 		}
 		else if (op === '**') {
 			num.val(Math.pow(+accum, +num.val()));
 			$("#result").val(num.val());
-			accum = num.val();
+			accum = 0;
 			vaciar();
 		}
 		else if (op === '/') {
 			num.val(+accum / +num.val());
 			$("#result").val(num.val());
-			accum = num.val();
+			accum = 0;
 			vaciar();
 		}
 		else if (op === '*') {
 			num.val(+accum * +num.val());
 			$("#result").val(num.val());
-			accum = num.val();
+			accum = 0;
 			vaciar();
 		}
 	});

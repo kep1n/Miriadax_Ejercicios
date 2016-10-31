@@ -203,12 +203,17 @@ $ (function () {
 	factorial.on("click", function(){
 		num = $("#input");
 		var result = 1;
-		while (num.val() > 0) {
-			result *= num.val();
-			num.val(num.val()-1);
+		if(num.val() > 0){
+			while (num.val() > 0) {
+				result *= num.val();
+				num.val(num.val()-1);
+			}
+			$("#result").val(result);
+			vaciar();
+		} else {
+			$("#result").val("Error");
+			vaciar();
 		}
-		$("#result").val(result);
-		vaciar();
 	});
 
 	$(".draggable").draggable({

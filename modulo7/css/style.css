@@ -130,13 +130,4 @@ div #botones ul li img:hover {
 	background-color: white;
 }
 
-span {
-	position: absolute;
-	top: 20%;
-	left: 5%;
-	width: 50%;
-	color: #FFFFFF;
-	font-family: "Raleway", sans-serif;
-	font-size: large;
-}
 

@@ -3,6 +3,8 @@
 <head>
 	<title>Event Example</title>
 	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script> -->
 	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
@@ -13,8 +15,16 @@
 </head>
 <body id="body">
 	<h2>Cronómetro</h2>
+	
+	<h2>
+		<ul>
+			<li id="crono"> 0.0</li>
+			<li><span> segundos </span> </li>
+		</ul>
+	</h2>
 
-	<h2><span id="crono"> 0.0 </span> segundos </h2>
+
+	<p>"Tap" para arrancar o parar el cronómetro.<br> "Swipe" para reinicializar a cero.</p>
 
 	<!-- <button type="button" id="cambiar"> arrancar/parar </button>
 	<button type="button" id="inicializar">  inicializar </button> -->

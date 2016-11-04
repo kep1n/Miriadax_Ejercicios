@@ -1,0 +1,21 @@
+body {
+	font-family:'Orbitron', sans-serif;
+}
+
+p {
+	font-size: 0.7em;
+}
+
+h2, p {
+	text-align: center;
+}
+
+li {
+	width: 98%;
+	text-align: center;
+	list-style-type: none;
+}
+
+span {
+	font-size:0.7em;
+}

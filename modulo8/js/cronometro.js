@@ -21,8 +21,8 @@ $(function(){
     	}
     };
 
-    $("#crono").on('tap', cambiar);
-    $("#crono").on('swipe', function(){
+    $("#body").on('tap', cambiar);
+    $("#body").on('swipe', function(){
     	cl.html("0.0");
     });
 

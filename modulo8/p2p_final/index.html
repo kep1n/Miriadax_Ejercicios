@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"><title>CITAS</title> 
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/citas.js" ></script>
+
+</head>
+
+<body>
+<div class="contenido">
+  <nav> 
+    <ul id="selector"></ul>
+  </nav>
+  <section id="caja">
+    <img id="foto" alt=""/>
+    <div class="textos">
+      <p id="frase"></p>
+      <p id="persona"></p>
+    </div>
+  </section>
+  <div class="editar">
+    <img id="nuevo" src="img/plus-white.svg" alt="añadir"/>
+    </div> 
+  <div class="editar">
+    <img id="editar" src="img/carat-d-white.svg" alt="editar"/>
+  </div>
+  <div class="editar">
+    <img id="restaurar" src="img/img_120882.svg" alt="restaurar"/>
+  </div>
+  
+  <section id="datos">
+    <div contentEditable="true" id="persona_d"></div>
+    <div contentEditable="true" id="frase_d"></div>
+    <div contentEditable="true" id="foto_d"></div>
+    <div id="botones">
+      <ul>
+        <li><img src="img/edit-black.svg" alt="guardar" id="guardar"/></li>
+        <li><img src="img/plus-black.svg" alt="añadir" id="nuevo2"/></li>
+        <li><img src="img/delete-black.svg" alt="borrar" id="borrar"/></li>
+      </ul>
+    </div>
+  </section>
+  </div>
+</body>
+</html>
+

@@ -92,10 +92,31 @@ nav a:hover {
 	height:28px;
 	cursor:pointer;
 }
+
+.editar2 {
+	float: left;
+	display: inline-block;
+	background-color: #AAACB0;
+	padding: 0.2em;
+	
+	height:28px;
+	cursor:pointer;
+}
+
+.editar2:hover > img {
+	background-color: #000000;
+}
+
 .editar img {
 	padding: 6px;
 	border-radius:50%;
 }
+
+.editar2 img {
+	padding: 6px;
+	border-radius:50%;
+}
+
 .editar:hover > img {
 	background-color: #000000;
 }

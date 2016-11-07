@@ -23,8 +23,8 @@ $(function(){
 
     $("#body").on('tap', cambiar);
     $("#body").on('swipe', function(){
-    	cl.html("0.0");
-    	parar();
+        parar();
+    	cl.html("0.0");    	
     });
 
  });

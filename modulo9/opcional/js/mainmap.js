@@ -34,7 +34,8 @@ var map, lat, lng;
       });
 
     };
-
+    //Esta función se ejecuta tantas veces como arrays de puntos entren y genera la ruta a partir de los
+    //puntos guardados en localStorage.
     function enlazarMarcador_(i){
       // muestra ruta entre marcas anteriores y actuales
       map.drawRoute({
@@ -46,9 +47,6 @@ var map, lat, lng;
         strokeOpacity: 0.6,
         strokeWeight: 5
       });
-
-      // lat = rutaParse[0];   // guarda coords para marca siguiente
-      // lng = rutaParse[1];
 
       map.addMarker({
         lat: rutaParse[i][0], 

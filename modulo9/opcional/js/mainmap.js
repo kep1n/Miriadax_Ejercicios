@@ -97,7 +97,9 @@ var map, lat, lng;
         alert("Keep coding!")
       }      
     });
-
+    /*Al cargar la página se verifica si localStorage está vacío u ocupado con información anterior.
+    Si la memoria está ocupada, se crea el mapa el marcador y se ejecuta enlazarMarcador_ tantas veces
+    arrays estén guardados */
     if(localStorage.route) {
       points = [];
       rutaParse = JSON.parse(localStorage.route);
@@ -116,7 +118,7 @@ var map, lat, lng;
        enlazarMarcador_(i);
       }
     } else {
-      geolocalizar();
+      geolocalizar(); //ejecuta la función correspondiente a la carga inicial
     }
     // geolocalizar();
   });

@@ -25,7 +25,7 @@ var map, lat, lng;
 
       points.push([lat,lng]);
       localStorage.route = JSON.stringify(points);
-      // rutaString = localStorage.route;
+      
       rutaParse = JSON.parse(localStorage.route);
 
       map.addMarker({

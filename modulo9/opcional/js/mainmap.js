@@ -2,37 +2,35 @@ var map, lat, lng;
 
 
   $(function(){
-
     
-
     function enlazarMarcador(e){
-
+      //Definimos la última latitud y longitud en el caso de que tengamos coordenadas en nuestra variable
+      if (rutaParse.length > 0) {
+        lat = rutaParse[rutaParse.length-1][0];
+        lng = rutaParse[rutaParse.length-1][1];
+      }
       // muestra ruta entre marcas anteriores y actuales
       map.drawRoute({
         origin: [lat, lng],  // origen en coordenadas anteriores
         // destino en coordenadas del click o toque actual
         destination: [e.latLng.lat(), e.latLng.lng()],
         travelMode: 'driving',
-        strokeColor: '#000000',
+        strokeColor: '#ff0000',
         strokeOpacity: 0.6,
         strokeWeight: 5
       });
 
-
-
       lat = e.latLng.lat();   // guarda coords para marca siguiente
       lng = e.latLng.lng();
-
-      points.push([lat,lng]);
-      localStorage.route = JSON.stringify(points);
-      
-      rutaParse = JSON.parse(localStorage.route);
-
+  
       map.addMarker({
         lat: lat, 
         lng: lng
       });
 
+      points.push([lat,lng]);
+      localStorage.route = JSON.stringify(points);
+      rutaParse = JSON.parse(localStorage.route);
     };
     //Esta función se ejecuta tantas veces como arrays de puntos entren y genera la ruta a partir de los
     //puntos guardados en localStorage.
@@ -52,7 +50,8 @@ var map, lat, lng;
         lat: rutaParse[i][0], 
         lng: rutaParse[i][1]
       });
-
+      console.log(rutaParse[i][0]);
+      console.log(rutaParse[i][1]);
     };
 
     function geolocalizar(){
@@ -60,11 +59,7 @@ var map, lat, lng;
         success: function(position){
           lat = position.coords.latitude;  // guarda coords en lat y lng
           lng = position.coords.longitude;
-
           points = [[lat,lng]];
-          localStorage.route = localStorage.route || JSON.stringify(points);
-          // var routeStringfied = JSON.stringify(localStorage.route);
-          
 
           map = new GMaps({  // muestra mapa centrado en coords [lat, lng]
             el: '#map',
@@ -101,8 +96,9 @@ var map, lat, lng;
     Si la memoria está ocupada, se crea el mapa el marcador y se ejecuta enlazarMarcador_ tantas veces
     arrays estén guardados */
     if(localStorage.route) {
-      points = [];
       rutaParse = JSON.parse(localStorage.route);
+      points = rutaParse;
+      
       map = new GMaps({  // muestra mapa centrado en coords [lat, lng]
         el: '#map',
         lat: rutaParse[0][0],
@@ -118,6 +114,7 @@ var map, lat, lng;
        enlazarMarcador_(i);
       }
     } else {
+      rutaParse = [];
       geolocalizar(); //ejecuta la función correspondiente a la carga inicial
     }
     // geolocalizar();

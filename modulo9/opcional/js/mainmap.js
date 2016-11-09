@@ -1,6 +1,5 @@
 var map, lat, lng;
 
-
   $(function(){
     
     function enlazarMarcador(e){
@@ -50,8 +49,6 @@ var map, lat, lng;
         lat: rutaParse[i][0], 
         lng: rutaParse[i][1]
       });
-      console.log(rutaParse[i][0]);
-      console.log(rutaParse[i][1]);
     };
 
     function geolocalizar(){

@@ -1,0 +1,77 @@
+body{
+  font-family: 'Droid Sans', 'Helvetica', Arial, sans-serif;
+}
+
+h1 {
+  float: right;
+  background: rgba(255,255,255, 0.6);
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+/*#latlng{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: absolute;  
+  top: 0;             
+  left: 0;
+  right: 0;
+  height: 50px;
+}*/
+
+#map{
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute; /* posición absoluta a navegador */
+  top: 0;      /* 50px debajo de borde de navegador */
+  left: 0;        /* ajusta a borde de navegador */
+  right: 0;
+  bottom: 0;
+  background: -webkit-linear-gradient(#E5E8E7,#AAAAAA); /* gradient si no hay mapa */
+  z-index: -1;
+}
+
+#restaurar {
+  display: inline;
+  cursor: pointer;
+  background: white;
+  position:relative;
+  top: 5px;
+  left: 146px;
+  color: rgb(86, 86, 86);
+  font-size: 11px;
+  font-family: "Roboto", Arial, sans-serif;
+  padding: 8px;
+  border: 0px;
+  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+#restaurar:hover{
+  background: rgb(235,235,235);
+}
+
+#compactar {
+  display: inline;
+  cursor: pointer;
+  background: white;
+  position:relative;
+  top: 5px;
+  left: 141px;
+  color: rgb(86, 86, 86);
+  font-size: 11px;
+  font-family: "Roboto", Arial, sans-serif;
+  padding: 8px;
+  border: 0px;
+  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+#compactar:hover{
+  background: rgb(235,235,235);
+}

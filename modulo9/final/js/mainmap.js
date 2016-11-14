@@ -114,7 +114,8 @@ var map, lat, lng;
       for(var i = 1; i < JSON.parse(localStorage.route).length; i++) {
        enlazarMarcador_(i);
       }
-      origen = rutaParse[1];
+      origen = rutaParse[1]; //cambia el origen al último punto en el caso de que se recargue la página, haciendo
+      //que el último punto del array sea el origen de la siguiente ruta y evitando que siempre tenga el mismo origen.
     } else {
       rutaParse = [];
       geolocalizar(); //ejecuta la función correspondiente a la carga inicial

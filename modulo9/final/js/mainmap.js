@@ -1,6 +1,8 @@
 var map, lat, lng;
 
   $(function(){
+
+    var origen =[];
     
     function enlazarMarcador(e){
       //Definimos la última latitud y longitud en el caso de que tengamos coordenadas en nuestra variable
@@ -57,6 +59,7 @@ var map, lat, lng;
           lat = position.coords.latitude;  // guarda coords en lat y lng
           lng = position.coords.longitude;
           points = [[lat,lng]];
+          origen = [lat,lng];
 
           map = new GMaps({  // muestra mapa centrado en coords [lat, lng]
             el: '#map',
@@ -95,6 +98,7 @@ var map, lat, lng;
     if(localStorage.route) {
       rutaParse = JSON.parse(localStorage.route);
       points = rutaParse;
+      origen = rutaParse[0];
       
       map = new GMaps({  // muestra mapa centrado en coords [lat, lng]
         el: '#map',
@@ -110,9 +114,38 @@ var map, lat, lng;
       for(var i = 1; i < JSON.parse(localStorage.route).length; i++) {
        enlazarMarcador_(i);
       }
+      origen = rutaParse[1];
     } else {
       rutaParse = [];
       geolocalizar(); //ejecuta la función correspondiente a la carga inicial
     }
     // geolocalizar();
+
+    var compactar = $('#compactar');
+    compactar.on("click", function(){
+      map.removeMarkers();
+      map.removePolylines();
+      
+      map.addMarker({
+        lat: origen[0],
+        lng: origen[1]
+      });
+      map.addMarker({
+        lat: rutaParse[rutaParse.length-1][0],
+        lng: rutaParse[rutaParse.length-1][1]
+      });
+
+      map.drawRoute({
+        origin: origen,        
+        destination: [rutaParse[rutaParse.length-1][0], rutaParse[rutaParse.length-1][1]],
+        travelMode: 'driving',
+        strokeColor: '#00ff00',
+        strokeOpacity: 0.6,
+        strokeWeight: 5
+      });
+
+      newPoints =[origen, rutaParse[rutaParse.length-1]];
+      localStorage.route = JSON.stringify(newPoints);
+      rutaParse = JSON.parse(localStorage.route);
+    });
   });
